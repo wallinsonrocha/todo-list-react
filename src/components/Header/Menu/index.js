@@ -1,51 +1,73 @@
 import { Menu, Option } from './style'
-import {Link} from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'   
+import './style.css'
 
 export default function MenuArea(props){
-
-    const [content, setContent] = useState(localStorage.getItem('name'));
-
-    useEffect(()=>{
-        window.localStorage.setItem('name', content);
-        props.setName(localStorage.getItem('name'))
-    },[content])
-
     return(        
             <Menu active={props.active}>
-                <Link to="/">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
+                <Link className='Link-format' to="/">
+                    <Option>
                         Todos
                     </Option>
                 </Link>
-                
-                <Link to="/sem-data-e-hora">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
-                        Sem data e hora
-                    </Option>
-                </Link>
-                
-                <Link to="/hoje">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
+                                
+                <Link className='Link-format' to="/hoje">
+                    <Option>
                         Hoje
                     </Option>
                 </Link>
                 
-                <Link to="/esta-semana">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
-                        Esta semana
+                <Link className='Link-format' to="/7-dias">
+                    <Option>
+                        Próximos 7 dias
                     </Option>
                 </Link>
                 
-                <Link to="/este-mes">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
-                        Este mês
+                <Link className='Link-format' to="/30-dias">
+                    <Option>
+                        Próximos 30 dias
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/90-dias">
+                    <Option>
+                        Próximos 90 dias
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/180-dias">
+                    <Option>
+                        Próximos 180 dias
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/365-dias">
+                    <Option>
+                        Próximos 365 dias
                     </Option>
                 </Link>
                 
-                <Link to="/este-ano">
-                    <Option onClick={(e)=>{setContent(e.target.textContent)}}>
+                <Link className='Link-format' to="/este-ano">
+                    <Option>
                         Este ano
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/concluidos">
+                    <Option>
+                        Concluídos
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/nao-concluidos">
+                    <Option>
+                        Não concluídos
+                    </Option>
+                </Link>
+
+                <Link className='Link-format' to="/atrazados">
+                    <Option>
+                        Atrazados
                     </Option>
                 </Link>
             </Menu>

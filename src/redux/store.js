@@ -2,8 +2,10 @@ import {configureStore, combineReducers} from '@reduxjs/toolkit';
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+import listReducer from './reducers/todoListSlice';
+
 const rootReducer = combineReducers({
-    
+       todo: listReducer 
 });
 
 const persistConfig = {
