@@ -6,6 +6,10 @@ export const Container = styled.div`
 
     align-items: center;
     box-shadow: 0 0 4px #000;
+
+    @media only screen and (max-width:768px) {
+        padding: 2em;
+    }
 `
 
 export const Icon = styled.div`

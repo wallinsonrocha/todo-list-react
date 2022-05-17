@@ -15,3 +15,10 @@
 
     font-size: 250%;
 }
+
+/* Mobile */
+    @media only screen and (max-width:768px) {
+            .logo{
+                display: none;
+            }
+        }
