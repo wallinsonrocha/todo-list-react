@@ -13,6 +13,7 @@ import Concluidos from '../../pages/Concluidos';
 import NaoConcluidos from '../../pages/Nao concluidos';
 
 import { AreaList } from './style';
+import Sobre from '../../pages/Sobre';
 
 export default function List(){
     return(
@@ -29,6 +30,7 @@ export default function List(){
                 <Route path="/este-ano" element={<EsteAno/>}/>
                 <Route path="/concluidos" element={<Concluidos/>}/>
                 <Route path="/nao-concluidos" element={<NaoConcluidos/>}/>
+                <Route path="/sobre" element={<Sobre/>}/>
             </Routes>
         </AreaList>
     )

@@ -10,6 +10,7 @@ function App() {
       <Router>
         <Header />
         <AreaToDo/>
+        <footer>Desenvolvido por Wallinson Rocha.</footer>
       </Router>
     </div>
   );

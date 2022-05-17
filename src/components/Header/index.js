@@ -29,6 +29,7 @@ export default function Header(props){
             case "/concluidos": setName("Concluídos"); break;
             case "/nao-concluidos": setName("Não concluídos"); break;
             case "/atrazados": setName("Atrazados"); break;
+            case "/sobre": setName("Sobre"); break;
         }
     },[location.pathname])
     //Fim
@@ -42,7 +43,7 @@ export default function Header(props){
                 </Icon>
                 <h1 className='logo'>To do list</h1>
             </Container>
-            <MenuArea active={active} setName={setName}/>
+            <MenuArea active={active} setActive={setActive}/>
         </>
     )
 }
