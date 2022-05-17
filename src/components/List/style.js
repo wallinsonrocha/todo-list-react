@@ -13,4 +13,9 @@ export const AreaList = styled.ul`
 
     background-color: #C4C4C4;
     list-style: none;
+
+    //Mobile
+    @media only screen and (max-width:768px) {
+        width: 80%;
+    }
 `
