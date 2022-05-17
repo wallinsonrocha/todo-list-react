@@ -6,6 +6,8 @@ export const Container = styled.div`
 
     align-items: center;
     box-shadow: 0 0 4px #000;
+
+    width: 100%;
 `
 
 export const Icon = styled.div`
