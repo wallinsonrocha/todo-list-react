@@ -26,14 +26,13 @@ export const TitleAdd = styled.div`
     margin: 0 auto;
 
     padding: 0.6em;
-    width: 20em;
 
     background-color: #fff;
-    border-radius: 5em;
+    border-radius: 1em;
 
     //Mobile
     @media only screen and (max-width:768px) {
-        width: 100%;
+        padding: .8em;
     }
 `
 
@@ -49,10 +48,11 @@ export const DHAdd = styled.div`
     display: flex;
     justify-content: space-around;
 
-    margin: 0 auto;
-    margin-top: 3em;
+    margin-bottom: 2em;
 `
 
 export const InputDH = styled.input`
-
+    border-radius: 1em;
+    padding: .2em;
+    background-color: #fff;
 `

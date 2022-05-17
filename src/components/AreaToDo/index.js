@@ -50,13 +50,6 @@ export default function AreaToDo() {
     return (
         <Area>
             <AreaAdd>
-                <TitleAdd>
-                    <Input value={textActivity} onChange={(e) => { setTextActivity(e.target.value) }} placeholder={'Adicione uma atividade aqui...'} 
-                    onKeyUp={(e)=>{
-                        if(e.key === "Enter"){add()}
-                    }}/>
-                    <FaPlus onClick={()=>{add()}}/>
-                </TitleAdd>
                 <DHAdd>
                     <div className="center">
                         <FaCalendarAlt className="icon" />
@@ -80,6 +73,13 @@ export default function AreaToDo() {
                         }}/>
                     </div>
                 </DHAdd>
+                <TitleAdd>
+                    <Input value={textActivity} onChange={(e) => { setTextActivity(e.target.value) }} placeholder={'Adicione uma atividade aqui...'} 
+                    onKeyUp={(e)=>{
+                        if(e.key === "Enter"){add()}
+                    }}/>
+                    <FaPlus onClick={()=>{add()}}/>
+                </TitleAdd>
             </AreaAdd>
             <List />
         </Area>
