@@ -1,0 +1,11 @@
+.icon{
+    color: #fff;
+    transform: scale(2.5);
+    margin: 1em;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
